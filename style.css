@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+ }
+ body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.outer-container{
+    background-color: rgb(210, 210, 242);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+}
+.inner-container{
+    flex:1;
+    max-width: 400px;
+    background-color: whitesmoke;
+    padding: 30px;
+    border: 2px solid black;
+}
+.plan-title{
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+    font: bold;
+}
+.plan-price{
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+.inner-container:hover .plan-title{
+    border-bottom: 2px solid lightblue;
+    transition: all 0.2s ease-in-out;
+}
+.inner-container:hover .features{
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.features{
+    list-style: none;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid black;
+}
+.features>li{
+    font-size: 20px;
+    text-align: start;
+}
+.pay{
+    outline: none;
+    border: none;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    font-size: 1.5rem;
+    background-color: black;
+    color: goldenrod;
+    border-radius: 20px;
+}
+.pay:hover{
+    background-color: goldenrod;
+    color: black;
+}
+@media (max-width:480px) {
+    body{
+        height: 100%;
+        background-color: rgb(210, 210, 242);
+    }
+    .outer-container{
+        margin: 50px 0;
+        flex-direction: column;
+        height: 100%;
+    }
+    .inner-container{
+        height: 250px;
+        width: 300px;
+        margin: 0;
+        padding: 10px;
+    }
+    .pay{
+        font: bolder;
+        margin: 20px 35px;
+        width: 200px;
+    }
+}
